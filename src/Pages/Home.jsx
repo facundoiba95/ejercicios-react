@@ -55,22 +55,22 @@ useEffect(() => {
 
   return (
 <AllProductsContainerStyle>
-  <li>h2BestSeller Products</li>
+  <li><h2>BestSeller Products</h2></li>
   <ProductsContainer>{isLoading ? <CircularProgress/> : BestSellerProducts(fetched)}</ProductsContainer>
   <br/><br/>
-  <span><h2>Electronics</h2>{}</span>
+  <li><h2>Electronics</h2></li>
   <ProductsContainer>{isLoading ? <CircularProgress/> : Category(fetched,'Electronics')}</ProductsContainer>
   <br/><br/>
-  <h2>Clothes{}</h2>
+  <li><h2>Clothes</h2></li>
   <ProductsContainer>{isLoading ? <CircularProgress/> : Category(fetched,'Clothes')}</ProductsContainer>
   <br/><br/>
-  <h2>Shoes</h2>
+  <li><h2>Shoes</h2></li>
   <ProductsContainer>{isLoading ? <CircularProgress/> : Category(fetched,'Shoes')}</ProductsContainer>
   <br/><br/>
-  <h2>Furnitures</h2>
+  <li><h2>Furnitures</h2></li>
   <ProductsContainer>{isLoading ? <CircularProgress/> : Category(fetched,'Furniture')}</ProductsContainer>
   <br/><br/>
-  <h2>Others</h2>
+  <li><h2>Others</h2></li>
   <ProductsContainer>{isLoading ? <CircularProgress/> : Category(fetched,'Others')}</ProductsContainer>
 </AllProductsContainerStyle>
  )
