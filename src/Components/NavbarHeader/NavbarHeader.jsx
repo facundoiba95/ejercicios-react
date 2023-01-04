@@ -24,7 +24,8 @@ export const NavbarHeader = () => {
           <FiShoppingCart className='cart__icon' onClick={() => setIsOpenCart(!isOpenCart) }/>
           <span className='cart__counter'>{cantidades}</span>
         </CartIconStyle>
-      <small>DarkMode<Switch checked={isCheck} onChange={()=>setIsCheck(!isCheck)}/></small>
+      <label for="darkmode" style={{color: 'white'}}>Darkmode</label>
+      <Switch id="darkmode" checked={isCheck} onChange={()=>setIsCheck(!isCheck)}/>
       </SwitchContainer>
       <Cart/>
       <CardAlert/>
