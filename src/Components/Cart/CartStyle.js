@@ -62,6 +62,7 @@ font-size:0.7rem;
 img{
     width:120px;
     border-radius:8px;
+    object-fit:contain;
 
 }
 `

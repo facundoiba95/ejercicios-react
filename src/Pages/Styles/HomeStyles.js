@@ -47,6 +47,7 @@ export const ImageProduct = styled.img`
 width:150px;
 height:130px;
 border-radius:8px;
+object-fit:contain;
 `
 
 export const ProductsContainer = styled.ul`
