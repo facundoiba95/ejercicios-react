@@ -15,7 +15,7 @@ export const Home = () => {
    return array.map(product => (
       <ItemProductStyle key={product.id} className='item__product'>
         <h3 className='text__product'>{product.title}</h3>
-        <ImageProduct src={product.images[0]}/>
+        <ImageProduct src={product.images[0]} alt={product.title}/>
         <h4 className='text__product'>${product.price}</h4>
         <small className='text__product'>Description: {product.description}</small>
         <BtnBuy onClick={addProduct}
@@ -55,7 +55,7 @@ useEffect(() => {
 
   return (
 <AllProductsContainerStyle>
-  <h2>BestSeller Products</h2>
+  <li>h2BestSeller Products</li>
   <ProductsContainer>{isLoading ? <CircularProgress/> : BestSellerProducts(fetched)}</ProductsContainer>
   <br/><br/>
   <span><h2>Electronics</h2>{}</span>
