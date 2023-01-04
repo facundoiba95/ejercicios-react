@@ -16,6 +16,8 @@ export const Data = ({children}) => {
     setFetched(res)
   }
 
+
+
   const targetProduct = (e) =>{
     e.preventDefault()
     

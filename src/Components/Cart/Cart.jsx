@@ -23,7 +23,7 @@ export const Cart = () => {
                     <QuantityMore data-id={products.id} onClick={(e)=> BtnPlus(e)} checked={isCheck}/>
                    </CartQuantityStyle>
                 </div>
-                <img src={products.images} alt={products.title}/>
+                <img src={products.images} alt={products.title} loading="lazy"/>
             </CartItemStyle>
         )
         )

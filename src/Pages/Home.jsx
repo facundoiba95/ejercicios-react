@@ -1,4 +1,4 @@
-import React,{useContext, useEffect, useState} from 'react'
+import React,{useContext, useEffect,Suspense,lazy} from 'react'
 import { AllProductsContainerStyle, ImageProduct, ItemProductStyle, ProductsContainer } from './Styles/HomeStyles'
 import { CircularProgress } from "react-cssfx-loading";
 import { BtnBuy } from '../Components/ButtonBuy/BtnBuy';
@@ -15,7 +15,7 @@ export const Home = () => {
    return array.map(product => (
       <ItemProductStyle key={product.id} className='item__product'>
         <h3 className='text__product'>{product.title}</h3>
-        <ImageProduct src={product.images[0]} alt={product.title}/>
+        <ImageProduct src={product.images[0]} alt={product.title} loading="lazy"/>
         <h4 className='text__product'>${product.price}</h4>
         <small className='text__product'>Description: {product.description}</small>
         <BtnBuy onClick={addProduct}
